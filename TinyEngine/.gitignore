@@ -4,3 +4,6 @@
 /Debug_Linux/
 /Release_Linux/
 /build/
+/x64/
+/.vs/
+/Debug/

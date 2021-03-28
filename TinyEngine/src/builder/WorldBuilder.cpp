@@ -657,7 +657,7 @@ bool WorldBuilder::buildNodes()
 				return false;
 			}
 
-			if (!renderManager.instanceSetJointMatrices(instanceHandle, jointMatricesHandle, node.jointMatrices.size()))
+			if (!renderManager.instanceSetJointMatrices(instanceHandle, jointMatricesHandle, (uint32_t)node.jointMatrices.size()))
 			{
 				return false;
 			}

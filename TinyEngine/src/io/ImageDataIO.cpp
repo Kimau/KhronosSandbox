@@ -73,7 +73,7 @@ bool ImageDataIO::open(ImageDataResources& output, const uint8_t* data, size_t l
 				output.images[face + output.faceCount * level].mipLevel = level;
 				output.images[face + output.faceCount * level].face = face;
 
-				uint64_t imageSize = currentWidth * currentHeight * pixelSize;
+				uint32_t imageSize = currentWidth * currentHeight * pixelSize;
 				output.images[face + output.faceCount * level].pixels.resize(imageSize);
 
 				uint8_t* outImageData = nullptr;
@@ -136,7 +136,7 @@ bool ImageDataIO::open(ImageDataResources& output, const std::string& filename, 
 	}
 
 	std::string binary = "";
-	if (!FileIO::open(binary, filename))
+	if (!FileIO::readFileIntroString(binary, filename))
 	{
 		return false;
 	}

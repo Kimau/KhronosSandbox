@@ -2,7 +2,7 @@
 
 #include <fstream>
 
-bool FileIO::open(std::string& output, const std::string& filename)
+bool FileIO::readFileIntroString(std::string& output, const std::string& filename)
 {
 	std::ifstream file(filename, std::ios::ate | std::ios::binary);
 	if (!file.is_open())
@@ -11,11 +11,10 @@ bool FileIO::open(std::string& output, const std::string& filename)
 	}
 
 	size_t fileSize = static_cast<size_t>(file.tellg());
-	file.seekg(0);
 
 	output.resize(fileSize);
-
-	file.read(output.data(), fileSize);
+	file.seekg(0);
+	file.read(&output[0], fileSize);
 	file.close();
 
 	return true;

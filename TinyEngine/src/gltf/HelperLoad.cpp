@@ -62,7 +62,7 @@ static bool ReadWholeFile(std::vector<unsigned char> *out, std::string *err, con
 {
 	std::string output = "";
 
-	if (!FileIO::open(output, filepath))
+	if (!FileIO::readFileIntroString(output, filepath))
 	{
 		return false;
 	}
@@ -991,7 +991,7 @@ bool HelperLoad::initScenes(GLTF& glTF)
 bool HelperLoad::open(GLTF& glTF, const std::string& filename)
 {
 	std::string output = "";
-	if (!FileIO::open(output, filename))
+	if (!FileIO::readFileIntroString(output, filename))
 	{
 		return false;
 	}

@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="activity">
+      <UniqueIdentifier>{3e14d44b-a9dc-4fba-9b6f-64388e529606}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="builder">
+      <UniqueIdentifier>{4ea31ba9-2d68-4e41-864d-724f57440d2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{d9508f19-58bb-4a70-b496-58a1aaa67227}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="composite">
+      <UniqueIdentifier>{39043c6e-2056-46bf-96bb-2897e943f9ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gltf">
+      <UniqueIdentifier>{e5ba5b37-1b3c-4c68-8e86-9eb2f4c355e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui">
+      <UniqueIdentifier>{ffee59aa-d72b-4e51-ab5d-b24cf980d6d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="io">
+      <UniqueIdentifier>{6a67c0c3-f7f7-4f99-bc0e-3f2d29253a7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="math">
+      <UniqueIdentifier>{28329e75-1031-4372-abd5-7222fcad3528}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="render">
+      <UniqueIdentifier>{f2b02ff6-7c09-4b6b-aa13-af6897e3dbd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shader">
+      <UniqueIdentifier>{32a9e61c-96d5-4254-aa5d-ed992f379531}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="wsi">
+      <UniqueIdentifier>{cc9cc1c4-e7c1-4efe-80cf-1c1730dca6cc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\activity\Activity.h" ><Filter>activity</Filter></ClInclude>
+    <ClInclude Include="..\src\activity\AnimationController.h" ><Filter>activity</Filter></ClInclude>
+    <ClInclude Include="..\src\activity\Interpolator.h" ><Filter>activity</Filter></ClInclude>
+    <ClInclude Include="..\src\builder\Builder.h" ><Filter>builder</Filter></ClInclude>
+    <ClInclude Include="..\src\builder\WorldBuilder.h" ><Filter>builder</Filter></ClInclude>
+    <ClInclude Include="..\src\common\Common.h" ><Filter>common</Filter></ClInclude>
+    <ClInclude Include="..\src\common\Logger.h" ><Filter>common</Filter></ClInclude>
+    <ClInclude Include="..\src\composite\Composite.h" ><Filter>composite</Filter></ClInclude>
+    <ClInclude Include="..\src\composite\HelperVulkan.h" ><Filter>composite</Filter></ClInclude>
+    <ClInclude Include="..\src\composite\VulkanResource.h" ><Filter>composite</Filter></ClInclude>
+    <ClInclude Include="..\src\gltf\Accessor.h" ><Filter>gltf</Filter></ClInclude>
+    <ClInclude Include="..\src\gltf\Animation.h" ><Filter>gltf</Filter></ClInclude>
+    <ClInclude Include="..\src\gltf\Buffer.h" ><Filter>gltf</Filter></ClInclude>
+    <ClInclude Include="..\src\gltf\BufferView.h" ><Filter>gltf</Filter></ClInclude>
+    <ClInclude Include="..\src\gltf\GLTF.h" ><Filter>gltf</Filter></ClInclude>
+    <ClInclude Include="..\src\gltf\HelperAccess.h" ><Filter>gltf</Filter></ClInclude>
+    <ClInclude Include="..\src\gltf\HelperAnimate.h" ><Filter>gltf</Filter></ClInclude>
+    <ClInclude Include="..\src\gltf\HelperLoad.h" ><Filter>gltf</Filter></ClInclude>
+    <ClInclude Include="..\src\gltf\HelperUpdate.h" ><Filter>gltf</Filter></ClInclude>
+    <ClInclude Include="..\src\gltf\Image.h" ><Filter>gltf</Filter></ClInclude>
+    <ClInclude Include="..\src\gltf\Material.h" ><Filter>gltf</Filter></ClInclude>
+    <ClInclude Include="..\src\gltf\Mesh.h" ><Filter>gltf</Filter></ClInclude>
+    <ClInclude Include="..\src\gltf\Node.h" ><Filter>gltf</Filter></ClInclude>
+    <ClInclude Include="..\src\gltf\PbrMetallicRoughness.h" ><Filter>gltf</Filter></ClInclude>
+    <ClInclude Include="..\src\gltf\Primitive.h" ><Filter>gltf</Filter></ClInclude>
+    <ClInclude Include="..\src\gltf\Sampler.h" ><Filter>gltf</Filter></ClInclude>
+    <ClInclude Include="..\src\gltf\Scene.h" ><Filter>gltf</Filter></ClInclude>
+    <ClInclude Include="..\src\gltf\Skin.h" ><Filter>gltf</Filter></ClInclude>
+    <ClInclude Include="..\src\gltf\Texture.h" ><Filter>gltf</Filter></ClInclude>
+    <ClInclude Include="..\src\gltf\TextureInfo.h" ><Filter>gltf</Filter></ClInclude>
+    <ClInclude Include="..\src\gui\Gui.h" ><Filter>gui</Filter></ClInclude>
+    <ClInclude Include="..\src\gui\imgui\imconfig.h" ><Filter>gui</Filter></ClInclude>
+    <ClInclude Include="..\src\gui\imgui\imgui.h" ><Filter>gui</Filter></ClInclude>
+    <ClInclude Include="..\src\gui\imgui\imgui_impl_vulkan.h" ><Filter>gui</Filter></ClInclude>
+    <ClInclude Include="..\src\gui\imgui\imgui_internal.h" ><Filter>gui</Filter></ClInclude>
+    <ClInclude Include="..\src\gui\imgui\imstb_rectpack.h" ><Filter>gui</Filter></ClInclude>
+    <ClInclude Include="..\src\gui\imgui\imstb_textedit.h" ><Filter>gui</Filter></ClInclude>
+    <ClInclude Include="..\src\gui\imgui\imstb_truetype.h" ><Filter>gui</Filter></ClInclude>
+    <ClInclude Include="..\src\io\FileIO.h" ><Filter>io</Filter></ClInclude>
+    <ClInclude Include="..\src\io\HelperFile.h" ><Filter>io</Filter></ClInclude>
+    <ClInclude Include="..\src\io\ImageDataIO.h" ><Filter>io</Filter></ClInclude>
+    <ClInclude Include="..\src\io\ImageDataResources.h" ><Filter>io</Filter></ClInclude>
+    <ClInclude Include="..\src\io\IO.h" ><Filter>io</Filter></ClInclude>
+    <ClInclude Include="..\src\IXr.h" ><Filter>IXr</Filter></ClInclude>
+    <ClInclude Include="..\src\math\Aabb.h" ><Filter>math</Filter></ClInclude>
+    <ClInclude Include="..\src\math\Frustum.h" ><Filter>math</Filter></ClInclude>
+    <ClInclude Include="..\src\math\glm_include.h" ><Filter>math</Filter></ClInclude>
+    <ClInclude Include="..\src\math\Math.h" ><Filter>math</Filter></ClInclude>
+    <ClInclude Include="..\src\math\Plane.h" ><Filter>math</Filter></ClInclude>
+    <ClInclude Include="..\src\math\Projection.h" ><Filter>math</Filter></ClInclude>
+    <ClInclude Include="..\src\math\Random.h" ><Filter>math</Filter></ClInclude>
+    <ClInclude Include="..\src\math\Sample.h" ><Filter>math</Filter></ClInclude>
+    <ClInclude Include="..\src\math\Sphere.h" ><Filter>math</Filter></ClInclude>
+    <ClInclude Include="..\src\math\SphericalCoordinate.h" ><Filter>math</Filter></ClInclude>
+    <ClInclude Include="..\src\render\BaseResource.h" ><Filter>render</Filter></ClInclude>
+    <ClInclude Include="..\src\render\CameraResource.h" ><Filter>render</Filter></ClInclude>
+    <ClInclude Include="..\src\render\GeometryModelResource.h" ><Filter>render</Filter></ClInclude>
+    <ClInclude Include="..\src\render\GeometryResource.h" ><Filter>render</Filter></ClInclude>
+    <ClInclude Include="..\src\render\GroupResource.h" ><Filter>render</Filter></ClInclude>
+    <ClInclude Include="..\src\render\InstanceResource.h" ><Filter>render</Filter></ClInclude>
+    <ClInclude Include="..\src\render\LightResource.h" ><Filter>render</Filter></ClInclude>
+    <ClInclude Include="..\src\render\MaterialResource.h" ><Filter>render</Filter></ClInclude>
+    <ClInclude Include="..\src\render\Render.h" ><Filter>render</Filter></ClInclude>
+    <ClInclude Include="..\src\render\RenderManager.h" ><Filter>render</Filter></ClInclude>
+    <ClInclude Include="..\src\render\SharedDataResource.h" ><Filter>render</Filter></ClInclude>
+    <ClInclude Include="..\src\render\TextureDataResource.h" ><Filter>render</Filter></ClInclude>
+    <ClInclude Include="..\src\render\WorldResource.h" ><Filter>render</Filter></ClInclude>
+    <ClInclude Include="..\src\shader\Compiler.h" ><Filter>shader</Filter></ClInclude>
+    <ClInclude Include="..\src\shader\HelperShader.h" ><Filter>shader</Filter></ClInclude>
+    <ClInclude Include="..\src\shader\Shader.h" ><Filter>shader</Filter></ClInclude>
+    <ClInclude Include="..\src\wsi\Surface.h" ><Filter>wsi</Filter></ClInclude>
+    <ClInclude Include="..\src\wsi\Wsi.h" ><Filter>wsi</Filter></ClInclude>
+    <ClInclude Include="..\src\TinyEngine.h" />
+    <ClInclude Include="..\src\XrEngine.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\activity\AnimationController.cpp" ><Filter>activity</Filter></ClCompile>
+    <ClCompile Include="..\src\activity\Interpolator.cpp" ><Filter>activity</Filter></ClCompile>
+    <ClCompile Include="..\src\builder\WorldBuilder.cpp" ><Filter>builder</Filter></ClCompile>
+    <ClCompile Include="..\src\common\Logger.cpp" ><Filter>common</Filter></ClCompile>
+    <ClCompile Include="..\src\composite\HelperVulkan.cpp" ><Filter>composite</Filter></ClCompile>
+    <ClCompile Include="..\src\composite\VulkanResource.cpp" ><Filter>composite</Filter></ClCompile>
+    <ClCompile Include="..\src\gltf\HelperAccess.cpp" ><Filter>gltf</Filter></ClCompile>
+    <ClCompile Include="..\src\gltf\HelperAnimate.cpp" ><Filter>gltf</Filter></ClCompile>
+    <ClCompile Include="..\src\gltf\HelperLoad.cpp" ><Filter>gltf</Filter></ClCompile>
+    <ClCompile Include="..\src\gltf\HelperUpdate.cpp" ><Filter>gltf</Filter></ClCompile>
+    <ClCompile Include="..\src\gui\imgui\imgui.cpp" ><Filter>gui</Filter></ClCompile>
+    <ClCompile Include="..\src\gui\imgui\imgui_draw.cpp" ><Filter>gui</Filter></ClCompile>
+    <ClCompile Include="..\src\gui\imgui\imgui_impl_vulkan.cpp" ><Filter>gui</Filter></ClCompile>
+    <ClCompile Include="..\src\gui\imgui\imgui_widgets.cpp" ><Filter>gui</Filter></ClCompile>
+    <ClCompile Include="..\src\io\FileIO.cpp" ><Filter>io</Filter></ClCompile>
+    <ClCompile Include="..\src\io\HelperFile.cpp" ><Filter>io</Filter></ClCompile>
+    <ClCompile Include="..\src\io\ImageDataIO.cpp" ><Filter>io</Filter></ClCompile>
+    <ClCompile Include="..\src\math\Aabb.cpp" ><Filter>math</Filter></ClCompile>
+    <ClCompile Include="..\src\math\Frustum.cpp" ><Filter>math</Filter></ClCompile>
+    <ClCompile Include="..\src\math\Plane.cpp" ><Filter>math</Filter></ClCompile>
+    <ClCompile Include="..\src\math\Projection.cpp" ><Filter>math</Filter></ClCompile>
+    <ClCompile Include="..\src\math\Random.cpp" ><Filter>math</Filter></ClCompile>
+    <ClCompile Include="..\src\math\Sample.cpp" ><Filter>math</Filter></ClCompile>
+    <ClCompile Include="..\src\math\Sphere.cpp" ><Filter>math</Filter></ClCompile>
+    <ClCompile Include="..\src\math\SphericalCoordinate.cpp" ><Filter>math</Filter></ClCompile>
+    <ClCompile Include="..\src\render\RenderManager.cpp" ><Filter>render</Filter></ClCompile>
+    <ClCompile Include="..\src\shader\Compiler.cpp" ><Filter>shader</Filter></ClCompile>
+    <ClCompile Include="..\src\shader\HelperShader.cpp" ><Filter>shader</Filter></ClCompile>
+    <ClCompile Include="..\src\wsi\Surface.cpp" ><Filter>wsi</Filter></ClCompile>
+    <ClCompile Include="..\src\TinyEngine.cpp" />
+    <ClCompile Include="..\src\XrEngine.cpp" />
+  </ItemGroup>
+</Project>

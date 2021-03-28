@@ -3,6 +3,7 @@
 #include <algorithm>
 #include <cstdio>
 
+
 std::string HelperFile::getPath(const std::string& filename)
 {
 	size_t position = filename.rfind("/");

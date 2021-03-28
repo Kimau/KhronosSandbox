@@ -7,7 +7,7 @@ class FileIO
 {
 public:
 
-	static bool open(std::string& output, const std::string& filename);
+	static bool readFileIntroString(std::string& output, const std::string& filename);
 
 };
 

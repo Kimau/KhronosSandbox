@@ -69,9 +69,9 @@ bool XrEngine::init(VkInstance vulkanInstance, VkPhysicalDevice vulkanPhysicalDe
     instanceCreateInfo.type = XR_TYPE_INSTANCE_CREATE_INFO;
 
     instanceCreateInfo.applicationInfo = {};
-    strncpy(instanceCreateInfo.applicationInfo.applicationName, "Hello OpenXR", XR_MAX_APPLICATION_NAME_SIZE);
+    strncpy_s(instanceCreateInfo.applicationInfo.applicationName, "Hello OpenXR", XR_MAX_APPLICATION_NAME_SIZE);
     instanceCreateInfo.applicationInfo.applicationVersion = 1;
-    strncpy(instanceCreateInfo.applicationInfo.engineName, "XrEngine", XR_MAX_ENGINE_NAME_SIZE);
+    strncpy_s(instanceCreateInfo.applicationInfo.engineName, "XrEngine", XR_MAX_ENGINE_NAME_SIZE);
     instanceCreateInfo.applicationInfo.engineVersion = 1;
     instanceCreateInfo.applicationInfo.apiVersion = XR_CURRENT_API_VERSION;
 

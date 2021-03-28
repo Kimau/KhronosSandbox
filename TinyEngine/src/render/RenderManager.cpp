@@ -1351,7 +1351,7 @@ bool RenderManager::geometryModelFinalize(uint64_t geometryModelHandle)
 		geometryModelResource->indexType = VK_INDEX_TYPE_UINT32;
 		geometryModelResource->indexBuffer = getBuffer(sharedDataHandle);
 		geometryModelResource->indexOffset = 0;
-		geometryModelResource->indexRange = newIndices.size() * sizeof(uint32_t);
+		geometryModelResource->indexRange = (uint32_t)(newIndices.size() * sizeof(uint32_t));
 	}
 
 	geometryModelResource->finalized = true;
@@ -1515,9 +1515,7 @@ bool RenderManager::instanceFinalize(uint64_t instanceHandle)
 			VkDeviceSize size = getSharedData(instanceResource->weightsHandle)->size / (frames * groupResource->geometryModelHandles.size());
 
 			for (uint32_t i = 0; i < frames; i++)
-			{
-				instanceResource->instanceContainers[geometryModelIndex].dynamicOffsets[i] = i * size + geometryModelIndex * groupResource->geometryModelHandles.size() * size;
-			}
+				instanceResource->instanceContainers[geometryModelIndex].dynamicOffsets[i] = (uint32_t)(i * size + geometryModelIndex * groupResource->geometryModelHandles.size() * size);
 		}
 
 		// Skinning
@@ -1555,11 +1553,9 @@ bool RenderManager::instanceFinalize(uint64_t instanceHandle)
 			for (uint32_t i = 0; i < frames; i++)
 			{
 				if (dynamicOffsets.size() > 0)
-				{
 					instanceResource->instanceContainers[geometryModelIndex].dynamicOffsets.push_back(dynamicOffsets[i]);
-				}
 
-				instanceResource->instanceContainers[geometryModelIndex].dynamicOffsets.push_back(i * size);
+				instanceResource->instanceContainers[geometryModelIndex].dynamicOffsets.push_back(i * (uint32_t)size);
 			}
 		}
 
@@ -1751,13 +1747,13 @@ bool RenderManager::instanceFinalize(uint64_t instanceHandle)
 		//
 
 		std::string vertexShaderSource = "";
-		if (!FileIO::open(vertexShaderSource, "../Resources/shaders/gltf.vert"))
+		if (!FileIO::readFileIntroString(vertexShaderSource, "../Resources/shaders/gltf.vert"))
 		{
 			return false;
 		}
 
 		std::string fragmentShaderSource = "";
-		if (!FileIO::open(fragmentShaderSource, "../Resources/shaders/gltf.frag"))
+		if (!FileIO::readFileIntroString(fragmentShaderSource, "../Resources/shaders/gltf.frag"))
 		{
 			return false;
 		}

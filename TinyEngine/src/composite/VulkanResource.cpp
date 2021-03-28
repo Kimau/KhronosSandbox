@@ -184,7 +184,7 @@ bool VulkanResource::createDeviceBufferResource(VkPhysicalDevice physicalDevice,
 				return false;
 			}
 
-			if (!copyHostToDevice(device, deviceBufferResource.bufferResource, deviceBufferResourceCreateInfo.data, deviceBufferResourceCreateInfo.bufferResourceCreateInfo.size))
+			if (!copyHostToDevice(device, deviceBufferResource.bufferResource, deviceBufferResourceCreateInfo.data, (size_t)deviceBufferResourceCreateInfo.bufferResourceCreateInfo.size))
 			{
 				return false;
 			}
@@ -234,7 +234,7 @@ bool VulkanResource::createUniformBufferResource(VkPhysicalDevice physicalDevice
 
 	if (uniformBufferResourceCreateInfo.data)
 	{
-		if (!copyHostToDevice(device, uniformBufferResource.bufferResource, uniformBufferResourceCreateInfo.data, uniformBufferResourceCreateInfo.bufferResourceCreateInfo.size))
+		if (!copyHostToDevice(device, uniformBufferResource.bufferResource, uniformBufferResourceCreateInfo.data, (size_t)uniformBufferResourceCreateInfo.bufferResourceCreateInfo.size))
 		{
 			return false;
 		}
